@@ -1,105 +1,145 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Rutgers College Site</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Rutgers College Site</title>
 
-        <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link
-        rel="stylesheet"
-        href="style.css">
-    </head>
-
-    <body>
-        <header>
-            <!-- place navbar here -->
-            <div class="container">
-
-                <div class="slide">
-        
-                    <div class="row">
-                    <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
-                        <div class="content">
-                            <div class="name">Majors</div>
-                            <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                            <button>See More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">   
-                    <div class="item" style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg);">
-                        <div class="content">
-                            <div class="name">Tuition</div>
-                            <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                            <button>See More</button>
-                        </div>
-                    </div>
-                    <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
-                        <div class="content">
-                            <div class="name">something</div>
-                            <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                            <button>See More</button>
-                        </div>
-                    </div>
-                    <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
-                        <div class="content">
-                            <div class="name">something else</div>
-                            <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                            <button>See More</button>
-                        </div>
-                    </div>
-                    <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
-                        <div class="content">
-                            <div class="name">another somehting else</div>
-                            <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                            <button>See More</button>
-                        </div>
-                    </div>
-                    <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
-                        <div class="content">
-                            <div class="name">damm more something else</div>
-                            <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                            <button>See More</button>
-                        </div>
-                    </div>
-        
-                </div>
-        
-                <div class="button">
-                    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-        
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Rutgers</a>
+            <div class="d-flex">
+                <a href="#" class="nav-link text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="nav-link text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="nav-link text-white"><i class="fab fa-pinterest"></i></a>
+                <a href="#" class="nav-link text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="nav-link text-white"><i class="fab fa-snapchat"></i></a>
+                <a href="#" class="nav-link text-white"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="nav-link text-white"><i class="fas fa-search"></i></a>
             </div>
-        </header>
-        <main></main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-         <script src="script.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+        </div>
+    </nav>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white">
+        <div class="container">
+            <header class="text-center mb-5">
+                <h1>Rutgers</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas tenetur neque cupiditate vel laudantium.</p>
+            </header>
+            <div class="text-center hero-content">
+                <h2>New Brunswick</h2>
+                <p>Welcome to Rutgers</p>
+                <a href="#" class="btn btn-outline-light mybtn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-lg-8">
+                <div class="mb-4">
+                    <h2>Blog Post 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <img src="https://via.placeholder.com/700x300" class="img-fluid" alt="Post Image">
+                    <p>Description of something here.</p>
+                </div>
+
+                <div class="mb-4">
+                    <h2>Another One</h2>
+                    <p>Some more details</p>
+                    <img src="https://via.placeholder.com/700x300" class="img-fluid" alt="Post Image">
+                    <p>Another description here.</p>
+                </div>
+
+                <div class="mb-4">
+                    <h2>Part 2</h2>
+                    <p>Description Part 3</p>
+                    <img src="https://via.placeholder.com/700x300" class="img-fluid" alt="Post Image">
+                    <p>Once more, a description.</p>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="col-lg-4">
+                <!-- Profile Section -->
+                <section class="mb-5">
+                    <div class="card text-center">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Profile Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Profile Title</h5>
+                            <p class="card-text">Short bio or description here.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Popular Posts Section -->
+                <section>
+                    <h3>Popular Posts</h3>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
+                                <div>
+                                    <h5>Adventures</h5>
+                                    <p>Sed mattis nunc...</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
+                                <div>
+                                    <h5>Art Walks</h5>
+                                    <p>Sed mattis nunc...</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
+                                <div>
+                                    <h5>Conventions</h5>
+                                    <p>Sed mattis nunc...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>Copy <i class="far fa-copyright"></i> made by me <i class="far fa-smile"></i></p>
+            <div>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-snapchat"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

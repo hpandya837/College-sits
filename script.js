@@ -1,12 +1,7 @@
-let next = document.querySelector('.next')
-let prev = document.querySelector('.prev')
+// Mobile Menu Toggle (Assuming a mobile menu, if implemented)
+$('.open-burger').on('click', function() {
+    $('#myNav').css('width', '100%');
+});
 
-next.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').appendChild(items[0])
-})
-
-prev.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
-})
+$('.close-burger').on('click', function() {
+    $('#my
