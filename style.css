@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     padding-top: 56px;
-    background: #eee;
+    background: white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,10 +15,11 @@ a {
 }
 
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(#cc0033, rgba(0, 0, 0, 0.7)),
         url('some img') no-repeat center center;
     background-size: cover;
     padding: 100px 0;
+    box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.7);
 }
 
 .hero-content h2 {
@@ -40,8 +41,14 @@ a {
 
 /* Sidebar */
 .card {
+    background: linear-gradient(#cc0033, rgba(0, 0, 0, 0.7)), url('some img') no-repeat center center;
+    background-size: cover;
+    color: #fff;
     border: none;
-    background: #000;
+}
+
+/* Ensure text remains visible */
+.card-title, .card-text {
     color: #fff;
 }
 
@@ -69,4 +76,11 @@ footer a:hover {
     .hero-content p {
         font-size: 1.25rem;
     }
+}
+
+.grad {
+    border: 5px solid #7c001fd5; 
+    box-shadow: 0vw 0vw .5vw black;
+    border-radius: 10px; 
+    padding: 5px; 
 }
