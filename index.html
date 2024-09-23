@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -17,16 +19,16 @@
         <img class="rulogo" src="ru1.png">
         <ul class="nav-menu">
             <li class="nav-item">
-                <a href="#" class="nav-link">Admission</a>
+                <a href="#admin" class="nav-link">Admission</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Student Life</a>
+                <a href="#stu" class="nav-link">Student Life</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Cost</a>
+                <a href="#cos" class="nav-link">Cost</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Alumni</a>
+                <a href="#alu" class="nav-link">Alumni</a>
             </li>
         </ul>
         <div class="hamburger">
@@ -41,13 +43,13 @@
         <section id="home" class="hero-section text-white ru">
             <div class="container">
                 <header class="text-center mb-5">
-                    <h1>Rutgers</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas tenetur neque cupiditate vel laudantium.</p>
+                    <h1>Wellcome!</h1>
+                   
                 </header>
                 <div class="text-center hero-content">
-                    <h2>New Brunswick</h2>
-                    <p>Welcome to Rutgers</p>
-                    <a href="#" class="btn btn-outline-light mybtn">Learn More</a>
+                    <h2>Rutgers</h2>
+                    <p>New Brunswick</p>
+                    <a href="#admin" class="btn btn-outline-light mybtn">Learn More</a>
                 </div>
             </div>
         </section>
@@ -58,7 +60,7 @@
         <div class="row">
             <!-- Left Column -->
             <div class="col-lg-8 pe-5">
-                <div class="mb-4 custom-card">
+                <div id="admin" class="mb-4 custom-card">
                     <div class="wrapper">
                         <div class="banner-image"></div>
                         <h1 id="title1">Admission</h1>
@@ -69,7 +71,7 @@
                     </div>
                 </div>
 
-                <div class="mb-4 custom-card">
+                <div id="stu" class="mb-4 custom-card">
                     <div class="wrapper">
                         <div class="banner-image" style="background-image: url('student.jpg');"></div>
                         <h1 id="title2">Student Life</h1>
@@ -81,7 +83,7 @@
                     </div>
                 </div>
                 
-                <div class="mb-4 custom-card">
+                <div id="cos" class="mb-4 custom-card">
                     <div class="wrapper">
                         <div class="banner-image" style="background-image: url('cost.jpg');"></div>
                         <h1 id="title3">Tution and Fees</h1>
@@ -96,53 +98,55 @@
             <!-- Right Sidebar -->
 <div class="col-lg-4">
     <!-- Profile Section -->
-    <section class="mb-5">
-        <div class="card text-center profile-card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Profile Image">
-            <div class="card-body">
-                <h5 class="card-title">Profile Title</h5>
-                <p class="card-text">Short bio or description here.</p>
-            </div>
-            <div class="button-wrapper">
-            <button onclick="alumni()" class="btn outline">DETAILS</button>
+<section  class="mb-5">
+    <div id="alu" class="card text-center profile-card right-col">
+        <img src="alum.png" class="card-img-top" alt="Profile Image">
+        <div id="wh" class="card-body">
+            <h5 class="card-title">Allumni</h5>
+            <p class="card-text">Take a look at popular Rutgers Alumni </p>
         </div>
+        <div id="wh1" class="button-wrapper">
+            <button onclick="alumni()" class="btn outline"><a href="https://rutgersfoundation.org/alumni">DETAILS</a></button>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Popular Posts Section -->
-    <section>
-        <h3>Popular Posts</h3>
-        <div class="list-group popular-posts">
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex align-items-center">
-                    <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
-                    <div>
-                        <h5>Stuffffff</h5>
-                        <p>Sed mattis nunc...</p>
-                    </div>
+<!-- Popular Posts Section -->
+<section>
+    <h3>Popular Posts</h3>
+    <div class="list-group popular-posts">
+        <a href="#" class="list-group-item list-group-item-action right-col">
+            <div class="d-flex align-items-center">
+                <img src="rart.jpg" class="me-3" alt="...">
+                <div>
+                    <h5>Arts and Crafts</h5>
+                    <p>Join our Vibrant Art community</p>
                 </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex align-items-center">
-                    <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
-                    <div>
-                        <h5>Sandman</h5>
-                        <p>Sed mattis nunc...</p>
-                    </div>
+            </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action right-col">
+            <div class="d-flex align-items-center">
+                <img src="rmc logo.png" class="me-3" alt="...">
+                <div>
+                    <h5>RMC!!!</h5>
+                    <p>Join Rutgers Model Congress Today!</p>
                 </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex align-items-center">
-                    <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
-                    <div>
-                        <h5>More blaaaaa</h5>
-                        <p>Sed mattis nunc...</p>
-                    </div>
+            </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action right-col">
+            <div class="d-flex align-items-center">
+                <img src="rvolley.jpg" class="me-3" alt="...">
+                <div>
+                    <h5>Volleyball</h5>
+                    <p>Open Gym on Wednesdays at 8 on Busch!</p>
                 </div>
-            </a>
-        </div>
-    </section>
+            </div>
+        </a>
+    </div>
+</section>
+
 </div>
+
 
         </div>
     </div>
@@ -150,14 +154,10 @@
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <p>Copy <i class="far fa-copyright"></i> made by me <i class="far fa-smile"></i></p>
+            <p>Copyright <i class="far fa-copyright"></i> Hardav Pandya <i class="far fa-smile"></i></p>
             <div>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-snapchat"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <i class="fa fa-github" style="font-size:48px"></i>
+
             </div>
         </div>
     </footer>

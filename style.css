@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
@@ -21,7 +20,7 @@ a {
     background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
 }
 
-/* Navbar */
+/* Navbar got from https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -33,7 +32,7 @@ a {
 }
 
 .rulogo {
-    height: 3rem; /* Reduce the height for better proportions */
+    height: 3rem; 
 }
 
 .hamburger {
@@ -91,7 +90,7 @@ a {
     }
 
     .rulogo {
-        height: 2.5rem; /* Smaller size for mobile */
+        height: 2.5rem; 
     }
 }
 
@@ -127,17 +126,16 @@ a {
     color: white;
 }
 
-/* Custom Card (First Card) */
+/* Card section found the transparency effect online */
 .custom-card {
     background: linear-gradient(
         #cc0033,
         rgba(0, 0, 0, 0.7)
-    ); /* Same gradient as hero */
+    ); 
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(20px); /* Glass-like blur */
-    color: white;
+    backdrop-filter: blur(20px); 
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -145,7 +143,7 @@ a {
 
 .custom-card .wrapper {
     text-align: center;
-    z-index: 2; /* Ensure content is above the background */
+    z-index: 2; 
 }
 
 .custom-card .banner-image {
@@ -156,7 +154,7 @@ a {
     width: 650px;
     margin: 0 auto 1rem;
     border-radius: 25%;
-    opacity: 1; /* Remove image transparency */
+    opacity: 1;
     z-index: 2;
     position: relative;
 }
@@ -208,49 +206,87 @@ a {
 }
 
 
-/* Profile Section */
-.profile-card {
-    width: 100%; /* Full width */
-    margin-bottom: 2rem; /* Increased spacing */
+/* Right side card  */
+.custom-card.right-col {
+    background: linear-gradient(
+        #1a1a1a,
+        rgba(0, 0, 0, 0.7)
+    ); 
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#wh{
+    color: white;
+}
+#wh1{
+    color: white;
+}
+
+.custom-card.right-col h5,
+.custom-card.right-col p {
+    color: #f0f0f0; 
+}
+
+
+.profile-card.right-col {
+    background: linear-gradient(
+        #333333, 
+        rgba(0, 0, 0, 0.8)
+    );
+    backdrop-filter: blur(10px);
+}
+
+
+
+/
+.list-group-item.right-col {
+    background: rgba(51, 51, 51, 0.9); 
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.list-group-item.right-col:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
 }
 
 .profile-card img {
-    height: 200px; /* Increased image height */
-    object-fit: cover; /* Maintain aspect ratio */
-}
-
-/* Popular Posts Section */
-.popular-posts {
-    margin-top: 2rem; /* Added top margin */
-}
-
-.list-group-item {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem; /* Increased padding */
-    margin-bottom: 1rem; /* Spacing between items */
+    border-radius: 50%; 
+    width: 100px;
+    height: 100px; 
+    object-fit: cover; 
 }
 
 .list-group-item img {
-    height: 120px; /* Increased image height */
-    width: 120px; /* Set width to maintain square shape */
-    margin-right: 1rem; /* Space between image and text */
+    border-radius: 15%;
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
 }
 
+
 .list-group-item h5 {
-    font-size: 1.5rem; /* Increased title size */
+    font-size: 1.4rem; 
+    color: #ffcccb; 
 }
 
 .list-group-item p {
-    font-size: 1rem; /* Increased description size */
+    font-size: 1rem;
+    color: #f0f0f0; 
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 1.5rem;
+.container.my-5 {
+    padding-right: 3rem; 
 }
+
 
 footer i {
     margin: 0 10px;
