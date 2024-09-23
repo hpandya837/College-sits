@@ -1,7 +1,9 @@
-// Mobile Menu Toggle (Assuming a mobile menu, if implemented)
-$('.open-burger').on('click', function() {
-    $('#myNav').css('width', '100%');
-});
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-$('.close-burger').on('click', function() {
-    $('#my
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
