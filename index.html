@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- Navbar  found from https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
+    <!-- Navbar -->
     <nav class="navbar">
         <img class="rulogo" src="ru1.png">
         <ul class="nav-menu">
@@ -37,97 +37,113 @@
     </nav>
 
     <!-- Hero Section -->
-     <div class="bgPattern">
-    <section id="home" class="hero-section text-white ru">
-        <div class="container">
-            <header class="text-center mb-5">
-                <h1>Rutgers</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas tenetur neque cupiditate vel laudantium.</p>
-            </header>
-            <div class="text-center hero-content">
-                <h2>New Brunswick</h2>
-                <p>Welcome to Rutgers</p>
-                <a href="#" class="btn btn-outline-light mybtn">Learn More</a>
+    <div class="bgPattern">
+        <section id="home" class="hero-section text-white ru">
+            <div class="container">
+                <header class="text-center mb-5">
+                    <h1>Rutgers</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas tenetur neque cupiditate vel laudantium.</p>
+                </header>
+                <div class="text-center hero-content">
+                    <h2>New Brunswick</h2>
+                    <p>Welcome to Rutgers</p>
+                    <a href="#" class="btn btn-outline-light mybtn">Learn More</a>
+                </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
+
     <!-- Main Content -->
     <div class="container my-5">
         <div class="row">
             <!-- Left Column -->
-            <div class="col-lg-8  ">
-                <div class="mb-4 grad">
-                    <h2> Post 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="https://via.placeholder.com/700x300" class="img-fluid" alt="Post Image">
-                    <p>Description of something here.</p>
+            <div class="col-lg-8 pe-5">
+                <div class="mb-4 custom-card">
+                    <div class="wrapper">
+                        <div class="banner-image"></div>
+                        <h1>Toyota Supra</h1>
+                        <p>Lorem ipsum dolor sit amet, <br/>
+                            consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="btn outline">DETAILS</button>
+                        <button class="btn fill">BUY NOW</button>
+                    </div>
                 </div>
 
-                <div class="mb-4">
-                    <h2>Another One</h2>
-                    <p>Some more details</p>
-                    <img src="https://via.placeholder.com/700x300" class="img-fluid" alt="Post Image">
-                    <p>Another description here.</p>
+                <div class="mb-4 custom-card">
+                    <div class="wrapper">
+                        <div class="banner-image" style="background-image: url('https://via.placeholder.com/700x300');"></div>
+                        <h1>Another One</h1>
+                        <p>Some more details</p>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="btn outline">DETAILS</button>
+                        <button class="btn fill">BUY NOW</button>
+                    </div>
                 </div>
-
-                <div class="mb-4">
-                    <h2>Part 2</h2>
-                    <p>Description Part 3</p>
-                    <img src="https://via.placeholder.com/700x300" class="img-fluid" alt="Post Image">
-                    <p>Once more, a description.</p>
+                
+                <div class="mb-4 custom-card">
+                    <div class="wrapper">
+                        <div class="banner-image" style="background-image: url('https://via.placeholder.com/700x300');"></div>
+                        <h1>Part 2</h1>
+                        <p>Description Part 3</p>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="btn outline">DETAILS</button>
+                        <button class="btn fill">BUY NOW</button>
+                    </div>
                 </div>
             </div>
 
             <!-- Right Sidebar -->
-            <div class="col-lg-4">
-                <!-- Profile Section -->
-                <section class="mb-5">
-                    <div class="card text-center">
-                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Profile Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Profile Title</h5>
-                            <p class="card-text">Short bio or description here.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Popular Posts Section -->
-                <section>
-                    <h3>Popular Posts</h3>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <div class="d-flex align-items-center">
-                                <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
-                                <div>
-                                    <h5>stuffffff</h5>
-                                    <p>Sed mattis nunc...</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <div class="d-flex align-items-center">
-                                <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
-                                <div>
-                                    <h5>sandman</h5>
-                                    <p>Sed mattis nunc...</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <div class="d-flex align-items-center">
-                                <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
-                                <div>
-                                    <h5>more blaaaaa</h5>
-                                    <p>Sed mattis nunc...</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </section>
+<div class="col-lg-4">
+    <!-- Profile Section -->
+    <section class="mb-5">
+        <div class="card text-center profile-card">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Profile Image">
+            <div class="card-body">
+                <h5 class="card-title">Profile Title</h5>
+                <p class="card-text">Short bio or description here.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Popular Posts Section -->
+    <section>
+        <h3>Popular Posts</h3>
+        <div class="list-group popular-posts">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex align-items-center">
+                    <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
+                    <div>
+                        <h5>Stuffffff</h5>
+                        <p>Sed mattis nunc...</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex align-items-center">
+                    <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
+                    <div>
+                        <h5>Sandman</h5>
+                        <p>Sed mattis nunc...</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex align-items-center">
+                    <img src="https://via.placeholder.com/100x100" class="me-3" alt="...">
+                    <div>
+                        <h5>More blaaaaa</h5>
+                        <p>Sed mattis nunc...</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+
         </div>
     </div>
 
